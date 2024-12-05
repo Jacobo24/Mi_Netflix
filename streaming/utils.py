@@ -57,7 +57,7 @@ def fetch_popular_movies_by_genre():
 
 def fetch_popular_tv_shows():
     """Obtiene series populares desde la API de TMDB."""
-    api_key = '1fe07a37512a920380b7c85f053ff3ea'
+    api_key = ' 9980df73b55139ebcf9a053dbdaf4031'
     url = f'https://api.themoviedb.org/3/tv/popular'
     params = {
         'api_key': api_key,

@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de búsqueda</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+    <header>
+        <h1>Resultados de búsqueda</h1>
+        <p>Buscando: "{{ query }}"</p>
+    </header>
+
+    {% if movies %}
+    <div class="movies-list">
+        {% for movie in movies %}
+        <div class="movie-item">
+            <img src="{{ movie.poster_url }}" alt="{{ movie.title }}" />
+            <div class="movie-info">
+                <h2>{{ movie.title }}</h2>
+                <p>{{ movie.release_date|default:"Fecha no disponible" }}</p>
+                <p>{{ movie.overview|default:"Sin descripción disponible" }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>No se encontraron películas para "{{ query }}".</p>
+{% endif %}
+</body>
+
+

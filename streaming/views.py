@@ -43,9 +43,6 @@ from django.shortcuts import render
 def categories(request):
     return render(request, 'categories.html')
 
-def my_list(request):
-    return render(request, 'my_list.html')
-
 
 
 
@@ -79,7 +76,7 @@ import requests
 from django.shortcuts import render
 
 # API Key
-API_KEY = '1fe07a37512a920380b7c85f053ff3ea'
+API_KEY = ' 9980df73b55139ebcf9a053dbdaf4031'
 
 # Vista para mostrar categorías
 def categories(request):

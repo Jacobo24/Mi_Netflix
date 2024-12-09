@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import MovieListView, MovieDetailView, PlaylistView, RecommendationView, home
 from .views import popular_movies, movie_details, search_movies
-from .views import categories, my_list
+from .views import categories
 from .views import search_movies
 from . import views
 

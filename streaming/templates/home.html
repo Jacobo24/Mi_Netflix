@@ -13,7 +13,6 @@
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="{% url 'streaming:categories' %}">Categorías</a></li>
-                <li><a href="#">Mi Lista</a></li>
                 <li>
                     <form id="search-form" method="get" action="{% url 'streaming:search-movies' %}">
                         <button type="button" id="search-button" class="search-btn">Buscar</button>
@@ -59,7 +58,7 @@
     </div>
 
     <footer>
-        <p>Jacoboflix - La mejor plataforma de streaming favorita.</p>
+        <p>Jacoboflix - La mejor plataforma de streaming.</p>
     </footer>
     <script>
         // Mostrar el input de búsqueda cuando el usuario hace clic en el botón de "Buscar"

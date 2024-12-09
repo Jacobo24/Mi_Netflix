@@ -123,7 +123,7 @@ USE_I18N = True
 USE_TZ = True
 
 
-TMDB_API_KEY = '1fe07a37512a920380b7c85f053ff3ea'
+TMDB_API_KEY = '9980df73b55139ebcf9a053dbdaf4031'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
